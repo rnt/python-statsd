@@ -18,13 +18,13 @@ def get_version():
 
 
 setup(
-    name='statsd',
+    name='python-statsd',
     version=get_version(),
     description='A simple statsd client.',
     long_description=open('README.rst').read(),
-    author='James Socol',
-    author_email='james@mozilla.com',
-    url='https://github.com/jsocol/pystatsd',
+    author='Renato Covarrubias',
+    author_email='rnt@rnt.cl',
+    url='https://github.com/rnt/python-statsd',
     license='MIT',
     packages=find_packages(),
     include_package_data=True,
