@@ -78,10 +78,9 @@ class StatsClient(object):
         if data is not None:
             self._after(data)
 
-    def set(self, stat, value):
-        """Send a value to your set."""
-        value = '%g|s' % value
-        data = self._prepare(stat, value)
+    def set(self, stat, value, rate=1):
+        """Set a set value."""
+        data = self._prepare(stat, '%s|s' % value, rate)
         if data is not None:
             self._after(data)
 
